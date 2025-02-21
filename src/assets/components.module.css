@@ -1,0 +1,74 @@
+.kvadrat {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #ff0066;
+    border-radius: 0px;
+    transition: none;
+  }
+  .kvadrat:focus {
+    cursor: default;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border: 3px solid #ff0066;
+  }
+  .kvadrat:focus-visible {
+    outline: none;
+    border: 3px solid #ff0066;
+  }
+  .kvadrat:active {
+    cursor: default;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background-color: #ff0066;
+    border: 3px solid #ff0066;
+  }
+  .kvadrat:hover {
+    cursor: default;
+    border: none;
+    outline: none;
+    border: 6px solid #ff0066;
+  }
+  .kvadrat:disabled {
+    pointer-events: none;
+  }
+
+  .redak {
+    display: flex;
+  }
+
+  .xo {
+    font-size: 40px;
+    font-weight: 1000;
+    color: rgb(255, 0, 0);
+  }
+
+  .revans {
+    margin: 20px;
+    background-color: #520524;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+    border-color: #520524;
+  }
+  .revans:hover {
+    border: none;
+    outline: none;
+    border-color: #520524;
+  }
+  .revans:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-color: #520524;
+  }
+  .revans:focus-visible {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-color: #520524;
+  }
