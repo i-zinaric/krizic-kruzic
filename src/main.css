@@ -73,6 +73,6 @@ button:focus-visible {
 @media (max-width: 768px) {
   body {
     margin: 0;
-    max-height: 100vh;
+    min-height: auto;
   }
 }
