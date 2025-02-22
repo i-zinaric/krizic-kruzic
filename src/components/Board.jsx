@@ -29,6 +29,7 @@ function Board ({ calculateWinner }) {
         if (!popunjenaPolja.includes(null)) {
             setImaNull(false);
         }
+        console.log(popunjenaPolja);
     }, [popunjenaPolja]);
 
     const dodijeliBoju = (i) => {
@@ -68,8 +69,8 @@ function Board ({ calculateWinner }) {
 
             
             {winner && <h3>POBJEDNIK JE {winner}</h3>}
-            {(!imaNull && !winner) && <h3>NEMA POBJEDNIKA</h3>}
-            {(winner || !imaNull) && 
+            {(!winner && popunjenaPolja.every(item => item!==null)) && <h3>NEMA POBJEDNIKA</h3>}
+            {(winner || (!winner && popunjenaPolja.every(item => item!==null))) && 
                 <button onClick={() => {setPopunjenaPolja(Array(9).fill(null))}}
                         className={styles.revans}>
                     REVANŠ!
