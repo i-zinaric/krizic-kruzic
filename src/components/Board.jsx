@@ -68,8 +68,8 @@ function Board ({ calculateWinner }) {
 
             
             {winner && <h3>POBJEDNIK JE {winner}</h3>}
-            {!imaNull && <h3>NEMA POBJEDNIKA</h3>}
-            {winner && 
+            {(!imaNull && !winner) && <h3>NEMA POBJEDNIKA</h3>}
+            {(winner || !imaNull) && 
                 <button onClick={() => {setPopunjenaPolja(Array(9).fill(null))}}
                         className={styles.revans}>
                     REVANŠ!
